@@ -42,7 +42,10 @@ header{
     bottom: 0;
     right: 0;
 }
-
+.busca{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 .busca,.menu-departamentos{
     background-color: #DCDCDC;
     font-weight: bold;
@@ -97,13 +100,19 @@ header{
     margin: 10px 0;
     padding: 10px;
     width: 445px;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 4px #999;
 }
 
 .novidades{
     float: left;
+    background-color: #F5DCDC;
+    background: linear-gradient(#F5DCDC,#BEBEF4);
 }
 .mais-vendidos{
     float: right;
+    background-color: #DCDCF5;
+    background: linear-gradient(#DCDCF5, #F4BEBE);
 }
 
 .painel li {
@@ -119,6 +128,7 @@ header{
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 2px rgba(255,255,255,255,0.8);
 }
 
 .painel a{
@@ -173,4 +183,28 @@ footer .container{
 .social li {
     float: left;
     margin-left: 25px;
+}
+
+.menu-opcoes a:hover{
+    color: #007dc6;
+}
+
+.menu-opcoes a:active{
+    color: #7cfc00;
+}
+
+.menu-departamentos li ul{
+    display: none;
+}
+
+.menu-departamentos li:hover ul{
+    display: block;
+}
+
+.menu-departamentos ul ul li{
+    background-color: #DCDCDC;
+}
+
+.menu-departamentos li li a::before{
+    content: '- ';
 }
